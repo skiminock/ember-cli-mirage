@@ -83,7 +83,7 @@ const JSONAPISerializer = Serializer.extend({
     return _(includes)
       .flatten()
       .compact()
-      .uniqBy(m => m.toString())
+      .uniq(m => m.toString())
       .value();
   },
 
