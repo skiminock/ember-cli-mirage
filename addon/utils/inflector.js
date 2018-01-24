@@ -1,4 +1,7 @@
-import { capitalize, camelize, dasherize, underscore } from '@ember/string';
+import Ember from 'ember';
 export { singularize, pluralize } from 'ember-inflector';
 
-export { capitalize, camelize, dasherize, underscore };
+export var capitalize = Ember.String.capitalize;
+export var camelize = Ember.String.camelize;
+export var dasherize = Ember.String.dasherize;
+export var underscore = Ember.String.underscore;
